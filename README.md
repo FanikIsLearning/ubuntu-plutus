@@ -73,23 +73,6 @@ experimental-features = nix-command" > ~/.config/nix/nix.conf
 This should get the playground running
 and then
 
-## Lesson
-## Building the week01 English Auction Contract
-
-```cd plutus-apps```
-
-```nix-shell```
-
-```cd plutus-pioneer-program/code/week01/```
-
-```cabal update```
-
-```cabal build```
-
-This worked for me @gluspier @PlanetStake
-
-### Useful Tools in plutus-apps
-
 ### Haddock documentation for the various plutus libraries
 
 ```console
@@ -102,6 +85,4 @@ and then it will soft set port 8002
 http://0.0.0.0:8002/haddock
 
 
-or to uninstall nix if you prefere solidity :D (god sees everything):
-https://gist.github.com/kintsugi/47e5e9f9d7c3a3a2f6004b6271365f8c 
 
