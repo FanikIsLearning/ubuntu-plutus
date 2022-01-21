@@ -1,4 +1,4 @@
-# ubuntu-plutus-app
+# ubuntu-plutus-app (Ubuntu 20.04 LTS + https://www.virtualbox.org/)
 ubuntu setup for plutus playground
 
 some useful infos:
@@ -7,6 +7,11 @@ https://docs.plutus-community.com/docs/setup/Ubuntu.html
 https://nixos.org/manual/nix/stable/installation/installing-binary.html
 
 ## VirtualBox setting for macOS Monterey Version 12.1
+
+If VirtualBox is running slow on Mac, you can try the following config on your Macbook
+
+https://askubuntu.com/questions/883955/ubuntu-software-center-is-very-slow
+https://mkyong.com/mac/virtualbox-running-slow-and-lag-on-macos-macbook-pro/
 
 ```console
 sudo nano /Applications/VirtualBox.app/Contents/Resources/VirtualBoxVM.app/Contents/Info.plist
@@ -21,6 +26,8 @@ Plutus Playground Setup and Run Instructions
 ## 1. prerequisite software
 
 ```console
+sudo apt update
+sudo apt install nodejs
 sudo apt install curl git
 ```
 
