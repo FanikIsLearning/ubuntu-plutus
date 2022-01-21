@@ -8,7 +8,9 @@ https://nixos.org/manual/nix/stable/installation/installing-binary.html
 
 ## VirtualBox setting for macOS Monterey Version 12.1
 
-```sudo nano /Applications/VirtualBox.app/Contents/Resources/VirtualBoxVM.app/Contents/Info.plist```
+```console
+sudo nano /Applications/VirtualBox.app/Contents/Resources/VirtualBoxVM.app/Contents/Info.plist
+```
 
 Change High Resolution Capable to NO
 
@@ -18,57 +20,91 @@ Plutus Playground Setup and Run Instructions
 
 ## 1. prerequisite software
 
-```sudo apt install curl git```
+```console
+sudo apt install curl git
+```
 
 ## 2. nix install
 
-```sh <(curl -L https://nixos.org/nix/install) --no-daemon```
+```console
+sh <(curl -L https://nixos.org/nix/install) --no-daemon
+```
 
-```. ~/.nix-profile/etc/profile.d/nix.sh```
+```console
+. ~/.nix-profile/etc/profile.d/nix.sh
+```
 
 ## 3. binary cache
 
-```mkdir ~/.config/nix```
-
+```console
+mkdir ~/.config/nix
 ```
+
+```console
 echo "substituters = https://hydra.iohk.io/ https://iohk.cachix.org/ https://cache.nixos.org/trusted-public-keys = hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ= iohk.cachix.org-1:DpRUyj7h7V830dp/i6Nti+NEO2/nhblbov/8MW7Rqoo= cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=
 experimental-features = nix-command" > ~/.config/nix/nix.conf
 ```
 
 ## 4. plutus-repo preparation
-```git clone https://github.com/input-output-hk/plutus-apps```
+```console
+git clone https://github.com/input-output-hk/plutus-apps
+```
 
-```cd plutus-apps```
+```console
+cd plutus-apps
+```
 
-```git checkout 41149926c108c71831cfe8d244c83b0ee4bf5c8a```
+```console
+git checkout 41149926c108c71831cfe8d244c83b0ee4bf5c8a
+```
 
 ## 5. building the playground
 
-```nix-build -A plutus-playground.server```
+```console
+nix-build -A plutus-playground.server
+```
 
 ## 6. running the playground at https://localhost:8009/
 # server
 
-```cd plutus-apps```
+```console
+cd plutus-apps
+```
 
-```nix-shell```
+```console
+nix-shell
+```
 
-```plutus-playground-server```
+```console
+plutus-playground-server
+```
 
-```plutus-playground-server```
+```console 
+plutus-playground-server
+```
 
 ## 7. new terminal window
 # client
 
-```cd plutus-apps```
+```console
+cd plutus-apps
+```
 
-```nix-shell```
+```console
+nix-shell
+```
 
-```cd plutus-playground-client```
+```console
+cd plutus-playground-client
+```
 
-```npm install```
+```console
+npm install
+```
 
-```npm start```
+```console
+npm start
+```
 
 This should get the playground running
 and then
