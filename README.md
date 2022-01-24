@@ -129,5 +129,8 @@ and then it will soft set port 8002
 
 http://0.0.0.0:8002/haddock
 
+### Notes
+Uninstall nix
+https://discussions.apple.com/docs/DOC-7942
 
 
