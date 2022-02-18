@@ -62,6 +62,8 @@ trusted-public-keys = hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ=
 experimental-features = nix-command" > ~/.config/nix/nix.conf
 ```
 
+restart
+
 ## 4. plutus-repo preparation
 ```console
 git clone https://github.com/input-output-hk/plutus-apps
