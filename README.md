@@ -111,7 +111,7 @@ nix-shell
 ```
 
 ```console
-plutus-playground-server
+cd plutus-playground-server
 ```
 
 ```console 
