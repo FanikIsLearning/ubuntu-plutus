@@ -29,7 +29,14 @@ Plutus Playground Setup and Run Instructions
 
 ```console
 sudo apt update
+```
+```console
+sudo apt-get install build-essential
+```
+```console
 sudo apt install nodejs
+```
+```console
 sudo apt install curl git
 ```
 
