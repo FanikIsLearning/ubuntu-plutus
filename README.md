@@ -40,7 +40,7 @@ sudo apt install nodejs
 sudo apt install curl git
 ```
 
-## 2. nix install
+## 2. nix install & ghc
 
 ```console
 sh <(curl -L https://nixos.org/nix/install) --no-daemon
@@ -48,6 +48,11 @@ sh <(curl -L https://nixos.org/nix/install) --no-daemon
 
 ```console
 . ~/.nix-profile/etc/profile.d/nix.sh
+```
+https://www.haskell.org/ghcup/
+
+```console
+curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 ```
 
 ## 3. binary cache
