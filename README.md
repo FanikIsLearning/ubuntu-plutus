@@ -54,7 +54,10 @@ https://www.haskell.org/ghcup/
 ```console
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
 ```
-
+If ghcup doesn't work
+```console
+. "$HOME/.ghcup/env"
+```
 ## 3. binary cache
 
 ```console
