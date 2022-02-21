@@ -58,6 +58,10 @@ If ghcup doesn't work
 ```console
 . "$HOME/.ghcup/env"
 ```
+or 
+```console
+stack ghcup
+```
 ## 3. binary cache
 
 ```console
