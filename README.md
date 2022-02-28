@@ -163,4 +163,7 @@ http://0.0.0.0:8002/haddock
 Uninstall nix
 https://discussions.apple.com/docs/DOC-7942
 
+chrony
+https://www.coincashew.com/coins/overview-ada/guide-how-to-build-a-haskell-stakepool-node/how-to-setup-chrony
+
 
