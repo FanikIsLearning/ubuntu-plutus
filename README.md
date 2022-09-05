@@ -18,6 +18,7 @@ https://mkyong.com/mac/virtualbox-running-slow-and-lag-on-macos-macbook-pro/
 ```console
 sudo nano /Applications/VirtualBox.app/Contents/Resources/VirtualBoxVM.app/Contents/Info.plist
 ```
+<key>NSHighResolutionCapable</key>          <false/>
 
 Change High Resolution Capable to NO
 
